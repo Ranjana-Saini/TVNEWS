@@ -1,0 +1,29 @@
+
+     articles = [
+        {
+            "source": {
+                "id": "the-washington-post",
+                "name": "The Washington Post"
+            },
+            "author": "Chris Mooney",
+            "title": "Warming oceans are carving vast trenches into Thwaites glacier - The Washington Post",
+            "description": "New research provides a startling and unprecedented look at how warmer oceans, driven by climate change, are tearing apart Thwaites glacier. All of West Antarctica, and 10 feet of sea level rise, are at stake.",
+            "url": "https://www.washingtonpost.com/climate-environment/2023/02/15/glacier-ice-melt-ocean-warming/",
+            "urlToImage": "https://www.washingtonpost.com/wp-apps/imrs.php?src=https://arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/BPCRTC7E3ZPUVGHBPW3J2TKGCQ.jpeg&w=1440",
+            "publishedAt": "2023-02-15T16:29:35Z",
+            "content": "Comment on this story\r\nRapidly warming oceans are cutting into the underside of the Earths widest glacier and posing a major sea-level-rise threat, startling new data and images show.\r\nUsing an under… [+8416 chars]"
+        },
+        {
+            "source": {
+                "id": null,
+                "name": "CNBC"
+            },
+            "author": "Natasha Turak",
+            "title": "Ukraine war live updates: EU announces new Russia sanctions package; Ukrainian children sent to Russian 're-education' camps, study says - CNBC",
+            "description": "A new report from the Conflict Observatory details the Kremlin's systemic efforts to abduct Ukrainian children.",
+            "url": "https://www.cnbc.com/2023/02/15/russia-ukraine-live-updates.html",
+            "urlToImage": "https://image.cnbcfm.com/api/v1/image/107045367-1649734536077-gettyimages-1390462714-jm2_3062_44ec7c1a-4f63-4d58-8de9-4d1a83cfa617.jpeg?v=1676473903&w=1920&h=1080",
+            "publishedAt": "2023-02-15T16:28:00Z",
+            "content": "European Union bans on Russian oil and oil product exports are having the \"intended effect\" on Russian oil production despite continued flows into the continent, according to Toril Bosoni, head of th… [+1568 chars]"
+        }
+    ]
