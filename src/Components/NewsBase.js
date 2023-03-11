@@ -24,10 +24,10 @@ export default class NewsBase extends Component {
         // let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&apiKey=dc8f8e01d7c54a07be12ae0ef2e8a70c&page=${this.state.page}&pageSize=5`;
         this.setState({loading: true})
         let url = `https://api.thenewsapi.com/v1/news/all?api_token=cy7XMUBpcdP51ylI1LVnhINWPDdhALt3eeCHKsK9&language=en&categories=${this.props.category}&page=${this.state.page}`
-        console.log(url);
+        // console.log(url);
         let response = await fetch(url);
         let jsonResponse = await response.json();
-        console.log(jsonResponse.data);
+        // console.log(jsonResponse.data);
         this.setState({articles : jsonResponse.data, loading:false})
     }
 
