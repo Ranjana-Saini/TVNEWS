@@ -1,26 +1,33 @@
 import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import Spin from './Spin'
-// import n from '../resource/newsData.json'
+import n from '../resource/newsData.json'
 
 export default class NewsBase extends Component {
 
     constructor() {
         super();
         this.state = {
-            articles: [],
+            articles: n.articles,
             page: 1,
-            loading : false
+            loading : false,
+            start : 0,
+            end : 5
         }
     }
 
     async fetchNewsAPI(){
-        this.setState({loading: true})
-        let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&apiKey=dc8f8e01d7c54a07be12ae0ef2e8a70c&page=${this.state.page}&pageSize=5`;
-        // console.log(url);
-        let response = await fetch(url);
-        let jsonResponse = await response.json();
-        this.setState({articles : jsonResponse.articles, loading:false})
+        // {this.state.articles.slice(0,5)}
+        this.setState({articles: n.articles.slice(this.state.start,this.state.end)})
+        console.log(this.state.articles);
+        console.log(this.state.start)
+        console.log(this.state.end)
+        // this.setState({loading: true})
+        // let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&apiKey=dc8f8e01d7c54a07be12ae0ef2e8a70c&page=${this.state.page}&pageSize=5`;
+        // // console.log(url);
+        // let response = await fetch(url);
+        // let jsonResponse = await response.json();
+        // this.setState({articles : jsonResponse.articles, loading:false})
     }
 
     async componentDidMount(){
@@ -29,7 +36,9 @@ export default class NewsBase extends Component {
 
     nextpage = async()=>{
         this.setState({
-            page : this.state.page+1
+            page : this.state.page+1,
+            start : this.state.start+5,
+            end : this.state.end+5
         })
         this.fetchNewsAPI();
     }
@@ -37,7 +46,9 @@ export default class NewsBase extends Component {
     previouspage = async()=>{
         if(this.state.page >1){
             this.setState({
-                page : this.state.page-1
+                page : this.state.page-1,
+                start : this.state.start-5,
+                end : this.state.end-5
             })
         }
         this.fetchNewsAPI();
