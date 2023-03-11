@@ -1,0 +1,59 @@
+{
+    "meta": {
+        "found": 2638685,
+        "returned": 3,
+        "limit": 3,
+        "page": 1
+    },
+    "data": [
+        {
+            "uuid": "8d4d06cf-4880-4494-8313-42c786659673",
+            "title": "Large language models are having their Stable Diffusion moment right now",
+            "description": "The open release of the Stable Diffusion image generation model back in August 2022 was a key moment. I wrote how Stable Diffusion is a really big deal at the ?...",
+            "keywords": "",
+            "snippet": "Large language models are having their Stable Diffusion moment right now\n\nThe open release of the Stable Diffusion image generation model back in August 2022 wa...",
+            "url": "https:\/\/simonwillison.net\/2023\/Mar\/11\/llama\/",
+            "image_url": "https:\/\/static.simonwillison.net\/static\/2023\/llama-smaller.gif",
+            "language": "en",
+            "published_at": "2023-03-11T19:21:54.000000Z",
+            "source": "simonwillison.net",
+            "categories": [
+                "tech"
+            ],
+            "relevance_score": null
+        },
+        {
+            "uuid": "c4598431-d5a1-4e7e-881b-e528da1a386f",
+            "title": "Smart Jacket for Fall Detection",
+            "description": "This project is used to monitor patient's activity and alerts if fall is detected. Find this and other hardware projects on Hackster.io.",
+            "keywords": "healthcare, internet of things, machine learning, monitoring, tinyml",
+            "snippet": "In this project Nicla Sense ME along with K-Way Jacket is used to create smart jacket to detect the fall detection. To built the system, the sensor node is embe...",
+            "url": "https:\/\/www.hackster.io\/timothy_malche\/smart-jacket-for-fall-detection-7204ba",
+            "image_url": "https:\/\/hackster.imgix.net\/uploads\/attachments\/1568089\/_yY94EwzRC8.blob?auto=compress&w=1600&h=1200&fit=min&fm=jpg",
+            "language": "en",
+            "published_at": "2023-03-11T19:20:22.000000Z",
+            "source": "hackster.io",
+            "categories": [
+                "tech"
+            ],
+            "relevance_score": null
+        },
+        {
+            "uuid": "4a2947a7-1960-427d-980c-930b12396957",
+            "title": "How to Watch UFC Fight Night: Yan vs. Dvalishvili on Roku, Fire TV, Apple TV, & More",
+            "description": "The UFC returns to Las Vegas for UFC Fight Night: Yan vs Dvalishvili. A bantamweight bout between #2 Petry Yan and Merab Dvalishvili is set to headline the even...",
+            "keywords": "",
+            "snippet": "The UFC returns to Las Vegas for UFC Fight Night: Yan vs Dvalishvili. A bantamweight bout between #2 Petry Yan and Merab Dvalishvili is set to headline the even...",
+            "url": "https:\/\/cordcuttersnews.com\/how-to-watch-ufc-fight-night-yan-vs-dvalishvili-on-roku-fire-tv-apple-tv-more\/",
+            "image_url": "https:\/\/cordcuttersnews.com\/wp-content\/uploads\/2018\/02\/iStock-665397306-e1518990608276.jpg",
+            "language": "en",
+            "published_at": "2023-03-11T19:20:02.000000Z",
+            "source": "cordcuttersnews.com",
+            "categories": [
+                "tech",
+                "entertainment"
+            ],
+            "relevance_score": null
+        }
+    ]
+}

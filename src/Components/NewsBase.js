@@ -1,14 +1,14 @@
 import React, { Component } from 'react'
 import NewsItems from './NewsItems'
 import Spin from './Spin'
-import n from '../resource/newsData.json'
+// import n from '../resource/newsData.json'
 
 export default class NewsBase extends Component {
 
     constructor() {
         super();
         this.state = {
-            articles: n.articles,
+            articles: [],
             page: 1,
             loading : false,
             start : 0,
@@ -17,17 +17,18 @@ export default class NewsBase extends Component {
     }
 
     async fetchNewsAPI(){
-        // {this.state.articles.slice(0,5)}
-        this.setState({articles: n.articles.slice(this.state.start,this.state.end)})
-        console.log(this.state.articles);
-        console.log(this.state.start)
-        console.log(this.state.end)
-        // this.setState({loading: true})
+        // this.setState({articles: n.articles.slice(this.state.start,this.state.end)})
+        // console.log(this.state.articles);
+        // console.log(this.state.start)
+        // console.log(this.state.end)
         // let url = `https://newsapi.org/v2/top-headlines?category=${this.props.category}&apiKey=dc8f8e01d7c54a07be12ae0ef2e8a70c&page=${this.state.page}&pageSize=5`;
-        // // console.log(url);
-        // let response = await fetch(url);
-        // let jsonResponse = await response.json();
-        // this.setState({articles : jsonResponse.articles, loading:false})
+        this.setState({loading: true})
+        let url = `https://api.thenewsapi.com/v1/news/all?api_token=cy7XMUBpcdP51ylI1LVnhINWPDdhALt3eeCHKsK9&language=en&categories=${this.props.category}&page=${this.state.page}`
+        console.log(url);
+        let response = await fetch(url);
+        let jsonResponse = await response.json();
+        console.log(jsonResponse.data);
+        this.setState({articles : jsonResponse.data, loading:false})
     }
 
     async componentDidMount(){
@@ -64,7 +65,7 @@ export default class NewsBase extends Component {
                     {this.state.loading && <Spin/>}
                     {this.state.articles.map((element)=>{
                         return <div className="col-md-4 my-3" key={element.url}>
-                        <NewsItems title={element.title.slice(0,40)} desc={(element.description)?element.description.slice(0,80):""} imgUrl={element.urlToImage} url={element.url} bg={this.props.bg} color={this.props.color}/>
+                        <NewsItems title={element.title.slice(0,40)} desc={(element.description)?element.description.slice(0,80):""} imgUrl={element.image_url} url={element.url} bg={this.props.bg} color={this.props.color}/>
                     </div>
                     })}
                     </div>

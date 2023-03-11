@@ -20,7 +20,7 @@ export default class NavBar extends Component {
                         </button>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav ">
-                                <li className="nav-item"><Link className={`nav-link text-${this.props.color}`} to="/business">Business</Link></li>
+                                <li className="nav-item"><Link className={`nav-link text-${this.props.color}`} to="/politics">Politics</Link></li>
                                 <li className="nav-item"><Link className={`nav-link text-${this.props.color}`} to="/entertainment">Entertainment </Link></li>
                                 <li className="nav-item"><Link className={`nav-link text-${this.props.color}`} to="/general">General</Link></li>
                                 <li className="nav-item"><Link className={`nav-link text-${this.props.color}`} to="/health">Health</Link></li>
