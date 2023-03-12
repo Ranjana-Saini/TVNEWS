@@ -5,7 +5,7 @@ export default class Spin extends Component {
     render() {
         return (
             <div className="d-flex justify-content-center">
-                <img src={load} alt="" />
+                <img style={{width : `${this.props.width}`, height: `${this.props.width}`}} src={load} alt="" />
             </div>
         )
     }
